@@ -1,0 +1,121 @@
+:root{
+    --font: 400 1rem Roboto,sans-serif;
+    --color-one: #0B090A;
+    --color-two: #161A1D;
+    --color-three: #BA181B;
+    --color-four: #A4161A;
+    --color-five: #E5383B;
+    --color-six: #FFFFFF;
+    --color-seven: #D3D3D3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body{
+    background-color: var(--color-one);
+}
+
+*, body, html{
+    font: var(--font);
+}
+
+.header{
+    background-color: var(--color-two);
+    color: var(--color-six);
+    padding: 2em 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header .title{
+    margin-left: 0.5em;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+    margin-bottom: 5em;
+}
+
+.box #cashierSearch{
+    background-color: var(--color-two);
+    border: none;
+    color: var(--color-six);
+    padding: 0.8em;
+    border-radius: 0.5em;
+    margin-right: 1em;
+}
+
+.box .btn{
+    background-color: var(--color-three);
+    width: 5em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .btn:hover{
+    background-color: var(--color-five);
+}
+
+/* .searchResult{
+   margin: auto;
+} */
+
+.searchResult .zip-code,.addres,.burgh,.city,.state{
+    color: var(--color-six);
+    font-size: 1.2em;
+    font-weight: 600;
+    border-bottom: 1px solid #d3d3d31f;
+    margin:1.5em 10em;
+}
+
+.searchResult .span{
+    color: var(--color-seven);
+    font-size: 1em;
+    font-weight: 600;
+}
+
+@media (max-width:700px){
+    body{
+        height: auto;
+    }
+
+    .header{
+        padding: 1em 0em;
+    }
+
+    .box{
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    .box #cashierSearch{
+        padding: 0.8em;
+        border-radius: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .box .btn{
+        width: 3.5em;
+    }
+
+    .searchResult .zip-code,.addres,.burgh,.city,.state{
+        font-size: 1em;
+        font-weight: 600;
+        border-bottom: 1px solid #d3d3d31f;
+        margin:1.5em 0.5em;
+    }
+}
