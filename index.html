@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./src/style/index.css">
+    <link rel="icon" type="image/png" href="./icons/local.png"/>
+    
     <title>App ViaCep</title>
 </head>
 <body>
@@ -16,18 +18,23 @@
         <h1 class="title">ViaCep</h1>
     </header>
     <div class="box">
-        <input type="number" name="cep" placeholder="Digite seu CEP" id="cashierSearch">
-        <button class="btn" id="btnSearch"><img src="./icons/lupa.png" alt="lupa" width="20" height="20"></button>
+        <input type="number" name="" placeholder="Digite seu CEP" id="cashierSearch">
+        <button class="btn" id="btnSearch" onclick="getDadosCep()"><img src="./icons/lupa.png" alt="lupa" width="20" height="20"></button>
     </div>
-    <div class="searchResult">
-        <p class="zip-code">CEP: <span class="span">Null</span></p>
-        <p class="addres">Endereço: <span class="span">Null</span></p>
-        <p class="burgh">Bairro: <span class="span">Null</span></p>
-        <p class="city">Cidade: <span class="span">Null</span></p>
-        <p class="state">Estado: <span class="span">Null</span></p>
+    <p class="alert" id="alerta">CEP invalido!! Tente novamente...</p>
+
+    <div class="searchResult" id="searchResult">
+        <p class="zip-code">CEP: <span class="span" id="cep"></span></p>
+        <p class="addres">Endereço: <span class="span" id="endereco"></span></p>
+        <p class="burgh">Bairro: <span class="span" id="bairro"></span></p>
+        <p class="city">Cidade: <span class="span" id="cidade"></span></p>
+        <p class="state">Estado: <span class="span" id="estado"></span></p>
 
     </div>
+   <!--  <div class="loader-content">
+        <span class="loader" id="loader"></span>
+    </div> -->
 </main>
-
+<script src="./src/javascript/main.js"></script>
 </body>
 </html>
